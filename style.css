@@ -8,3 +8,28 @@ html,body{
 height:100%;
 width:100%;
 }
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(139, 193, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pannel{
+    height: 85%;
+    width: 80%;
+    background-color: rgb(220, 225, 221);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#ptop{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(6, 57, 16);
+
+}
