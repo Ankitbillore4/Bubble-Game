@@ -1,6 +1,7 @@
 
-var Timmer = 60;
+var Timmer = 10;
 var Score = 0;
+var Hitrn = 0;
 
 
 function increaseScore(){
@@ -9,8 +10,8 @@ function increaseScore(){
 }
 
 function getHit() {
-    var rn = Math.floor(Math.random() * 10)
-    document.querySelector("#hitval").textContent = rn
+    Hitrn = Math.floor(Math.random() * 10)
+    document.querySelector("#hitval").textContent = Hitrn
 }
 
 function Bubble() {
@@ -30,10 +31,23 @@ function runTimmer() {
             document.querySelector("#timmer").textContent = Timmer
         } else {
             clearInterval(timerint)
+            document.querySelector("#pbtm").innerHTML = `<h1>Game Over</h1>`;
+            
 
         }
     }, 1000)
 }
+
+
+document.querySelector("#pbtm").addEventListener("click",function(dets){
+var Clickednum = Number(dets.target.textContent);
+if(Clickednum===Hitrn){
+    increaseScore()
+    Bubble()
+    getHit()
+}
+})
+
 
 runTimmer()
 
