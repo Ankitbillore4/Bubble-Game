@@ -1,5 +1,5 @@
 
-var Timmer = 10;
+var Timmer = 60;
 var Score = 0;
 var Hitrn = 0;
 
