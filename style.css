@@ -48,6 +48,7 @@ width:100%;
 #result{
     height: 30px;
     display: flex;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
     font-weight: 600;
