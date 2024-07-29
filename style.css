@@ -2,6 +2,7 @@
   margin:0%;
   padding:0%;
   box-sizing: border-box;
+  font-family: "gilroy";
 }
 
 html,body{
@@ -30,6 +31,57 @@ width:100%;
 #ptop{
     height: 10%;
     width: 100%;
-    background-color: rgb(6, 57, 16);
+    align-items: center;
+    background-color: rgb(15, 96, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
+#box{
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}
+
+#result{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.5vw;
+    padding: 0px 25px;
+    background-color: #fff;
+    color: rgb(44, 158, 44);
+}
+
+
+#pcenter{
+    height:calc(100% - 10%);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background-color: rgb(238, 127, 127);
+}
+
+#bubble{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6vw;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-color: #0b651c;
+}
+
+#bubble:hover{
+    background-color: #034720;
 }
